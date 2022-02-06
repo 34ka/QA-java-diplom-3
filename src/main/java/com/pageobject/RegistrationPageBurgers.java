@@ -1,6 +1,7 @@
 package com.pageobject;
 
 import com.codeborne.selenide.SelenideElement;
+import io.qameta.allure.Step;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
@@ -40,6 +41,7 @@ public class RegistrationPageBurgers {
         passwordField.setValue(password);
     }
     //метод клика по кнопке "Зарегистрироваться"
+    @Step("Клик по кнопке \"Зарегистрироваться\"")
     public void clickRegisterButton() {
         registerButton.click();
     }
@@ -52,6 +54,7 @@ public class RegistrationPageBurgers {
         clickRegisterButton();
     }
     //метод клика по тексту "Войти"
+    @Step("Клик по тексту \"Войти\"")
     public void clickLogin() {
         login.click();
     }

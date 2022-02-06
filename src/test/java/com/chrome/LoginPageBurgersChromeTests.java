@@ -12,7 +12,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import static com.codeborne.selenide.Selenide.*;
-import static com.pageobject.MainPageBurgers.homePageBurgers;
+import static com.pageobject.MainPageBurgers.HOME_PAGE_BURGERS;
 import static org.junit.Assert.assertTrue;
 
 public class LoginPageBurgersChromeTests {
@@ -28,7 +28,7 @@ public class LoginPageBurgersChromeTests {
         Configuration.startMaximized = true;
 
         //перейти на страницу тестового стенда
-        MainPageBurgers mainPage = open(homePageBurgers, MainPageBurgers.class);
+        MainPageBurgers mainPage = open(HOME_PAGE_BURGERS, MainPageBurgers.class);
 
         //кликнуть на "Личный Кабинет"
         mainPage.clickPersonalAccountButton();
@@ -53,7 +53,7 @@ public class LoginPageBurgersChromeTests {
     public void checkLoginButtonMainPageForLoginTest() {
 
         //перейти на страницу тестового стенда
-        MainPageBurgers mainPage = open(homePageBurgers, MainPageBurgers.class);
+        MainPageBurgers mainPage = open(HOME_PAGE_BURGERS, MainPageBurgers.class);
 
         //кликнуть на "Войти в аккаунт"
         mainPage.clickLoginButton();
@@ -71,7 +71,7 @@ public class LoginPageBurgersChromeTests {
     public void checkPersonalAccountButtonMainPageForLoginTest() {
 
         //перейти на страницу тестового стенда
-        MainPageBurgers mainPage = open(homePageBurgers, MainPageBurgers.class);
+        MainPageBurgers mainPage = open(HOME_PAGE_BURGERS, MainPageBurgers.class);
 
         //кликнуть на "Личный Кабинет"
         mainPage.clickPersonalAccountButton();
@@ -89,7 +89,7 @@ public class LoginPageBurgersChromeTests {
     public void checkLoginButtonRegistrationPageForLoginTest() {
 
         //перейти на страницу тестового стенда
-        MainPageBurgers mainPage = open(homePageBurgers, MainPageBurgers.class);
+        MainPageBurgers mainPage = open(HOME_PAGE_BURGERS, MainPageBurgers.class);
 
         //кликнуть на "Личный Кабинет"
         mainPage.clickPersonalAccountButton();
@@ -114,7 +114,7 @@ public class LoginPageBurgersChromeTests {
     public void checkLoginButtonForgotPasswordPageForLoginTest() {
 
         //перейти на страницу тестового стенда
-        MainPageBurgers mainPage = open(homePageBurgers, MainPageBurgers.class);
+        MainPageBurgers mainPage = open(HOME_PAGE_BURGERS, MainPageBurgers.class);
 
         //кликнуть на "Личный Кабинет"
         mainPage.clickPersonalAccountButton();

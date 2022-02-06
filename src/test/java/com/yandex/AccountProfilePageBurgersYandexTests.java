@@ -13,7 +13,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import static com.codeborne.selenide.Selenide.*;
-import static com.pageobject.MainPageBurgers.homePageBurgers;
+import static com.pageobject.MainPageBurgers.HOME_PAGE_BURGERS;
 import static org.junit.Assert.assertTrue;
 
 public class AccountProfilePageBurgersYandexTests extends BaseBurgers {
@@ -32,7 +32,7 @@ public class AccountProfilePageBurgersYandexTests extends BaseBurgers {
         startYandexBrowser();
 
         //перейти на страницу тестового стенда
-        MainPageBurgers mainPage = open(homePageBurgers, MainPageBurgers.class);
+        MainPageBurgers mainPage = open(HOME_PAGE_BURGERS, MainPageBurgers.class);
 
         //кликнуть на "Личный Кабинет"
         mainPage.clickPersonalAccountButton();
@@ -57,7 +57,7 @@ public class AccountProfilePageBurgersYandexTests extends BaseBurgers {
     public void checkAccountProfileTest() {
 
         //перейти на страницу тестового стенда
-        MainPageBurgers mainPage = open(homePageBurgers, MainPageBurgers.class);
+        MainPageBurgers mainPage = open(HOME_PAGE_BURGERS, MainPageBurgers.class);
 
         //кликнуть на "Войти в аккаунт"
         mainPage.clickLoginButton();
@@ -83,7 +83,7 @@ public class AccountProfilePageBurgersYandexTests extends BaseBurgers {
     public void checkConstructorFromAccountProfileTest() {
 
         //перейти на страницу тестового стенда
-        MainPageBurgers mainPage = open(homePageBurgers, MainPageBurgers.class);
+        MainPageBurgers mainPage = open(HOME_PAGE_BURGERS, MainPageBurgers.class);
 
         //кликнуть на "Войти в аккаунт"
         mainPage.clickLoginButton();
@@ -116,7 +116,7 @@ public class AccountProfilePageBurgersYandexTests extends BaseBurgers {
     public void checkLogoutFromAccountProfileTest() {
 
         //перейти на страницу тестового стенда
-        MainPageBurgers mainPage = open(homePageBurgers, MainPageBurgers.class);
+        MainPageBurgers mainPage = open(HOME_PAGE_BURGERS, MainPageBurgers.class);
 
         //кликнуть на "Войти в аккаунт"
         mainPage.clickLoginButton();

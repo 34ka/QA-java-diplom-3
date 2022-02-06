@@ -1,6 +1,7 @@
 package com.pageobject;
 
 import com.codeborne.selenide.SelenideElement;
+import io.qameta.allure.Step;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
@@ -11,6 +12,7 @@ public class ForgotPasswordPageBurgers {
     private SelenideElement login;
 
     //метод клика по тексту "Войти"
+    @Step("Клик по тексту \"Войти\"")
     public void clickLogin() {
         login.click();
     }
