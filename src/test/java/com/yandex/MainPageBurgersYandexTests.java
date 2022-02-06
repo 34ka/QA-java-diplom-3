@@ -52,12 +52,6 @@ public class MainPageBurgersYandexTests extends BaseBurgers {
         //перейти на страницу тестового стенда
         MainPageBurgers mainPage = open(HOME_PAGE_BURGERS, MainPageBurgers.class);
 
-        //кликнуть на раздел "Начинки"
-        mainPage.clickFilling();
-
-        //кликнуть на раздел "Булки"
-        mainPage.clickBuns();
-
         //проверить на дисплее заголовок "Булки"
         assertTrue(mainPage.isHeaderBunsVisible());
     }
