@@ -25,7 +25,7 @@ public class MainPageBurgers {
     @FindBy(how = How.XPATH,using = ".//h2[text()='Начинки']")
     private SelenideElement headerFilling;
     //локатор раздела "Начинки" после клика на него
-    @FindBy(how = How.XPATH,using = ".//div[@class='tab_tab__1SPyG tab_tab_type_current__2BEPc pt-4 pr-10 pb-4 pl-10 noselect']")
+    @FindBy(how = How.XPATH,using = ".//div[@class='tab_tab_type_current__2BEPc']")
     private SelenideElement headerFillingVisibleAfterClick;
     //локатор раздела "Соусы"
     @FindBy(how = How.XPATH,using = ".//span[text()='Соусы']")
@@ -34,7 +34,7 @@ public class MainPageBurgers {
     @FindBy(how = How.XPATH,using = ".//h2[text()='Соусы']")
     private SelenideElement headerSauces;
     //локатор раздела "Соусы" после клика на него
-    @FindBy(how = How.XPATH,using = ".//div[@class='tab_tab__1SPyG tab_tab_type_current__2BEPc pt-4 pr-10 pb-4 pl-10 noselect']")
+    @FindBy(how = How.XPATH,using = ".//div[@class='tab_tab_type_current__2BEPc']")
     private SelenideElement headerSaucesVisibleAfterClick;
     //локатор раздела "Булки"
     @FindBy(how = How.XPATH,using = "//span[contains(text(),'Булки')]")
@@ -43,7 +43,7 @@ public class MainPageBurgers {
     @FindBy(how = How.XPATH,using = ".//h2[text()='Булки']")
     private SelenideElement headerBuns;
     //локатор раздела "Булки" после клика на него
-    @FindBy(how = How.XPATH,using = ".//div[@class='tab_tab__1SPyG tab_tab_type_current__2BEPc pt-4 pr-10 pb-4 pl-10 noselect']")
+    @FindBy(how = How.XPATH,using = ".//div[@class='tab_tab_type_current__2BEPc']")
     private SelenideElement headerBunsVisibleAfterClick;
     //локатор кнопки "Оформить заказ"
     @FindBy(how = How.XPATH,using = ".//button[text()='Оформить заказ']")
